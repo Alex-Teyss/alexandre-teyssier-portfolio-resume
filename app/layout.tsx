@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
+import { twMerge } from "tailwind-merge";
 import "./globals.css";
 
 const inter_tight = Inter_Tight({ subsets: ["latin"] });
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter_tight.className}>{children}</body>
+      <body className={twMerge(inter_tight.className, "bg-primary")}>{children}</body>
     </html>
   );
 }

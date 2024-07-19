@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Button } from './ui/button';
 
 const Navbar = () => {
   return (
@@ -23,8 +24,8 @@ const Navbar = () => {
             <Link href="/projects" className="text-secondary hover:text-white px-3 py-2 rounded-md text-md font-medium">
               Works
             </Link>
-            <Link href="/contact" className="bg-secondary text-primary hover:bg-secondary/80 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
-              Let&apos;s talk
+            <Link href="/contact" className="px-3 py-2">
+              <Button className="bg-indigo-500 border-indigo-500 text-primary-foreground hover:text-primary-foreground hover:bg-indigo-800 hover:border-indigo-800">Let&apos;s talk</Button>
             </Link>
           </div>
         </div>
